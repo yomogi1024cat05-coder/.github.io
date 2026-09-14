@@ -1,37 +1,264 @@
-
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Yomogi Portfolio</title>
+    <title>Portfolio</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <h1>Portfolio</h1>
+    <!-- =========================
+         ヘッダー
+    ========================== -->
+    <header>
 
-    <h2>About</h2>
+        <h1>YOMOGI</h1>
 
-    <p>
-        ゲームプログラマーを目指してゲーム制作をしています。
-    </p>
+        <nav>
+            <a href="#about">ABOUT</a>
+            <a href="#works">WORKS</a>
+            <a href="#skills">SKILLS</a>
+            <a href="#contact">CONTACT</a>
+        </nav>
 
-    <h2>Works</h2>
+    </header>
 
-    <h3>Dream of Cave</h3>
 
-    <p>
-        Unity / C#で制作している採掘ゲームです。
-    </p>
+    <main>
 
-    <h3>○○○○</h3>
+        <!-- =========================
+             最初に表示される部分
+        ========================== -->
+        <section class="hero">
 
-    <p>
-        RPG Developer Bakinで制作したゲームです。
-    </p>
+            <p class="hero-subtitle">
+                GAME PROGRAMMER
+            </p>
+
+            <h2>
+                Portfolio
+            </h2>
+
+            <p>
+                Unity / C#を中心にゲーム制作をしています。
+            </p>
+
+            <a class="button" href="#works">
+                作品を見る
+            </a>
+
+        </section>
+
+
+        <!-- =========================
+             自己紹介
+        ========================== -->
+        <section id="about">
+
+            <h2>ABOUT</h2>
+
+            <div class="about">
+
+                <div>
+
+                    <h3>ゲームプログラマー志望</h3>
+
+                    <p>
+                        北海道情報大学 情報メディア学科に所属しています。
+                    </p>
+
+                    <p>
+                        Unity・C#を中心にゲーム制作を行っています。
+                        ゲームの仕組みを考え、
+                        実際に動く形へ実装することに興味があります。
+                    </p>
+
+                    <p>
+                        現在は採掘ゲーム「Dream of Cave」を
+                        個人制作しています。
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             作品
+        ========================== -->
+        <section id="works">
+
+            <h2>WORKS</h2>
+
+            <div class="works-grid">
+
+
+                <!-- Dream of Cave -->
+                <article class="work-card">
+
+                    <img
+                        src="images/dream-of-cave/thumbnail.png"
+                        alt="Dream of Cave">
+
+                    <div class="work-content">
+
+                        <p class="work-type">
+                            Unity / C#
+                        </p>
+
+                        <h3>Dream of Cave</h3>
+
+                        <p>
+                            地下を掘り進みながら鉱石を集め、
+                            プレイヤーを強化していく採掘ゲーム。
+                        </p>
+
+                        <a
+                            class="button"
+                            href="works/dream-of-cave.html">
+
+                            詳しく見る
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Bakin作品 -->
+                <article class="work-card">
+
+                    <img
+                        src="images/bakin/thumbnail.png"
+                        alt="Bakin作品">
+
+                    <div class="work-content">
+
+                        <p class="work-type">
+                            Developer Game Bakin
+                        </p>
+
+                        <h3>作品名</h3>
+
+                        <p>
+                            Developer Game Bakinを使用して制作したゲーム。
+                        </p>
+
+                        <a
+                            class="button"
+                            href="works/bakin.html">
+
+                            詳しく見る
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             Skills
+        ========================== -->
+        <section id="skills">
+
+            <h2>SKILLS</h2>
+
+            <div class="skills-grid">
+
+                <div class="skill">
+                    <h3>Unity</h3>
+                    <p>
+                        個人ゲーム制作で使用。
+                    </p>
+                </div>
+
+                <div class="skill">
+                    <h3>C#</h3>
+                    <p>
+                        Unityでのゲームシステム実装に使用。
+                    </p>
+                </div>
+
+                <div class="skill">
+                    <h3>Developer Game Bakin</h3>
+                    <p>
+                        ゲーム制作で使用。
+                    </p>
+                </div>
+
+                <div class="skill">
+                    <h3>Git / GitHub</h3>
+                    <p>
+                        ソースコード管理・作品公開に使用。
+                    </p>
+                </div>
+
+                <div class="skill">
+                    <h3>Python</h3>
+                    <p>
+                        大学の授業などで使用。
+                    </p>
+                </div>
+
+                <div class="skill">
+                    <h3>R</h3>
+                    <p>
+                        データ分析などで使用。
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             Contact
+        ========================== -->
+        <section id="contact">
+
+            <h2>CONTACT</h2>
+
+            <p>
+                GitHub
+            </p>
+
+            <a
+                class="button"
+                href="https://github.com/あなたのユーザー名"
+                target="_blank">
+
+                GitHubを見る
+
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            © 2026 YOMOGI
+        </p>
+
+    </footer>
 
 </body>
+
 </html>
