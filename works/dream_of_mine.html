@@ -1,1 +1,184 @@
+<!DOCTYPE html>
+<html lang="ja">
 
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Dream of Mine | Portfolio
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="../style.css">
+
+</head>
+
+<body>
+
+
+<header>
+
+    <h1>YOMOGI</h1>
+
+    <nav>
+
+        <a href="../index.html">
+            HOME
+        </a>
+
+    </nav>
+
+</header>
+
+
+<main>
+
+    <section>
+
+        <p class="work-type">
+            Unity / C#
+        </p>
+
+        <h1>
+            Dream of Cave
+        </h1>
+
+        <img
+            src="../images/dream-of-mine/thumbnail.png"
+            alt="Dream of Mine"
+            style="width:100%;">
+
+    </section>
+
+
+    <section>
+
+        <h2>OVERVIEW</h2>
+
+        <p>
+            地下を掘り進みながら鉱石を集め、
+            プレイヤーや装備を強化していく
+            採掘ゲームです。
+        </p>
+
+    </section>
+
+
+    <section>
+
+        <h2>DEVELOPMENT</h2>
+
+        <p>
+            制作人数：1人
+        </p>
+
+        <p>
+            使用エンジン：Unity
+        </p>
+
+        <p>
+            使用言語：C#
+        </p>
+
+        <p>
+            制作期間：7ヶ月
+        </p>
+
+    </section>
+
+
+    <section>
+
+        <h2>IMPLEMENTATION</h2>
+
+        <h3>採掘システム</h3>
+
+        <p>
+            タイルごとに耐久値を管理し、
+            プレイヤーの採掘能力に応じて
+            タイルを破壊するシステムを実装しています。
+        </p>
+
+
+        <h3>マップ生成</h3>
+
+        <p>
+            プレイヤーが地下へ進むのに合わせて
+            新しいマップを生成する仕組みを実装しています。
+        </p>
+
+
+        <h3>セーブシステム</h3>
+
+        <p>
+            プレイヤーのステータスや進行状況などを
+            JSON形式で保存しています。
+        </p>
+
+    </section>
+
+
+    <section>
+
+        <h2>POINT</h2>
+
+        <p>
+            プレイヤーが地下へ進み続けるゲームのため、
+            すべてのマップをGameObjectとして
+            保持し続けないようにしています。
+        </p>
+
+        <p>
+            プレイヤー周辺と先のマップのみを管理し、
+            一定距離進むごとに不要になった部分を削除して
+            新しいエリアを生成する方式を採用しています。
+        </p>
+
+    </section>
+
+
+    <section>
+
+        <h2>GITHUB</h2>
+
+        <a
+            class="button"
+            href="GitHubのURL"
+            target="_blank">
+
+            Repositoryを見る
+
+        </a>
+
+    </section>
+
+
+    <section>
+
+        <a
+            href="../index.html#works">
+
+            ← 作品一覧へ戻る
+
+        </a>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    © 2026 中野 陽 / よもぎ。
+
+</footer>
+
+
+</body>
+
+</html>
